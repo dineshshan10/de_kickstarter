@@ -35,9 +35,10 @@
 ```
 
 1. Verify Runner Docker Container in the Docker desktop. Two containers should be running
-   1. ds-postgres-container
-   2. ds-pgadmin
-   
+   ```
+    ds-postgres-container
+    ds-pgadmin
+   ```
 Docker is now setup
 
 ### Login into Postgres Database

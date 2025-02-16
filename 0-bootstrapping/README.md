@@ -22,7 +22,13 @@
     cp env_variables.env .env
     ```
 
-1. Run Docker Compose command
+1. Stop ALL existing postgres docker containers(if any)
+   ```
+   docker ps -a
+
+   ```
+
+2. Run Docker Compose command
    
 ```
  docker compose up -d
@@ -37,15 +43,18 @@ Docker is now setup
 ### Login into Postgres Database
 
 1. Go to http://localhost:5050
-1. Add new Server
-1. Give a connection name in **General** tab
-1. Fill below details in **Connection** tab
+2. Login using
+   1. email: postgres@postgres.com
+   2. password: postgres
+3. Add new Server
+4. Give a connection name in **General** tab
+5. Fill below details in **Connection** tab
    1. host: host.docker.internal
    2. port: 5432
    3. database: postgres
    4. username: postgres
    5. password: postgres
-1. Navigate to the tables and find the imported tables
+6. Navigate to the tables and find the imported tables
 
 
 ## Docker Commans to Debug
